@@ -1,0 +1,443 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>DNKA Global | One-Stop Corporate Services Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#e0e3e5",
+                    "on-primary-fixed-variant": "#39475f",
+                    "inverse-primary": "#b9c7e4",
+                    "surface-dim": "#d8dadc",
+                    "slate-gray": "#64748B",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#76849f",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#e6e8ea",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-secondary-container": "#00714d",
+                    "surface-bright": "#f7f9fb",
+                    "tertiary-fixed-dim": "#b7c8e1",
+                    "on-surface-variant": "#44474d",
+                    "error-container": "#ffdad6",
+                    "background": "#f7f9fb",
+                    "tertiary-container": "#0b1c30",
+                    "secondary-fixed-dim": "#4edea3",
+                    "surface-container-low": "#f2f4f6",
+                    "secondary-container": "#6cf8bb",
+                    "on-secondary-fixed": "#002113",
+                    "on-tertiary-container": "#75859d",
+                    "primary": "#000000",
+                    "outline-variant": "#c5c6cd",
+                    "ice-white": "#F8FAFC",
+                    "tertiary-fixed": "#d3e4fe",
+                    "primary-container": "#0d1c32",
+                    "secondary": "#006c49",
+                    "surface-container": "#eceef0",
+                    "on-primary-fixed": "#0d1c32",
+                    "primary-fixed": "#d6e3ff",
+                    "on-tertiary-fixed-variant": "#38485d",
+                    "outline": "#75777e",
+                    "on-tertiary-fixed": "#0b1c30",
+                    "tertiary": "#000000",
+                    "on-background": "#191c1e",
+                    "on-tertiary": "#ffffff",
+                    "emerald-accent": "#10B981",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e0e3e5",
+                    "on-surface": "#191c1e",
+                    "on-error": "#ffffff",
+                    "surface": "#f7f9fb",
+                    "surface-tint": "#515f78",
+                    "secondary-fixed": "#6ffbbe",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "inverse-surface": "#2d3133",
+                    "surface-container-lowest": "#ffffff",
+                    "deep-navy": "#0A192F"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "caption": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes badgePulse {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+            }
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) skewX(-15deg); }
+            100% { transform: translateX(200%) skewX(-15deg); }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        }
+
+        .animate-badge-pulse {
+            animation: badgePulse 2.5s infinite;
+        }
+
+        .shimmer-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shimmer-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.2) 50%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: translateX(-100%) skewX(-15deg);
+            animation: shimmer 3s infinite;
+        }
+
+        .hover-lift {
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 15px rgba(16, 185, 129, 0.1);
+        }
+
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+    </style>
+</head>
+<body class="bg-ice-white font-body-md text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="bg-ice-white dark:bg-deep-navy sticky top-0 z-50 border-b border-slate-gray/10 transition-shadow duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<img alt="DNKA Global Logo" class="h-10 md:h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd7Fu7p7OM7qwUIfdUCf3cJPvQGZKPSBBWuK7MjHv5BZ3-LMEVJvlRJWYJ76y7l2rOd10RZwqo8IVdpJf-mHa5KcTDvFZcZpzvmTgdwNRk5Uja2GbAGJa1pSH5bck9Hc7VLshhHVucCXZJmLY7-LWb0HhYN_es98GWvgtJ7a5gBEhgsnaHeY9qcBUwCq5TYWx7p3_VF1iYMEaK7EPR4aWXNejcigSvcue7nNNZ08ZMYMipgdsY5xJz">
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-emerald-accent transition-colors duration-300" href="#services">India</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-emerald-accent transition-colors duration-300" href="#services">Australia</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-emerald-accent transition-colors duration-300" href="#services">Expansion</a>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md text-label-md hover:bg-emerald-accent transition-all duration-300 active:scale-95" href="#contact">Connect Now</a>
+</nav>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-deep-navy py-20 md:py-32 overflow-hidden bg-pattern">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-accent/10 border border-emerald-accent/20 mb-8 animate-fade-in-up animate-badge-pulse">
+<span class="w-2 h-2 rounded-full bg-emerald-accent animate-pulse"></span>
+<span class="font-label-md text-label-md text-emerald-accent">Officially MCA Approval in progress | Full Platform Launching Soon</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6 animate-fade-in-up delay-100 opacity-0 fill-mode-forwards">
+                    Your Premium, One-Stop <br class="hidden md:block"> <span class="text-emerald-accent">Global Corporate</span> Services Hub.
+                </h1>
+<p class="font-body-lg text-body-lg text-slate-gray max-w-2xl mb-12 animate-fade-in-up delay-200 opacity-0 fill-mode-forwards">
+                    Backed by expert CAs, CSs, Legal, and Tech professionals. We are building a seamless, tech-enabled platform to bring complete business compliance right to your fingertips.
+                </p>
+<!-- Progress Indicator -->
+<div class="w-full max-w-md mb-12 animate-fade-in-up delay-300 opacity-0 fill-mode-forwards">
+<div class="flex justify-between items-end mb-2">
+<span class="font-label-md text-label-md text-white">Platform Development</span>
+<span class="font-headline-md text-headline-md text-emerald-accent">85%</span>
+</div>
+<div class="w-full h-3 bg-white/10 rounded-full overflow-hidden border border-white/5">
+<div class="h-full bg-emerald-accent rounded-full w-[85%] relative transition-all duration-1000 ease-out">
+<div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-400 opacity-0 fill-mode-forwards">
+
+<a class="border border-white/20 text-white px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-white/5 transition-colors active:scale-95" href="#services">
+                        Explore Services
+                    </a>
+</div>
+</div>
+</div>
+<!-- Abstract background element -->
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-emerald-accent/10 blur-[120px] rounded-full"></div>
+</section>
+<!-- Core Services Grid -->
+<section class="py-24 md:py-32 bg-ice-white" id="services">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Core Compliance Solutions</h2>
+<div class="h-1 w-20 bg-emerald-accent"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- India Operations -->
+<div class="bg-white border border-slate-gray/10 p-8 rounded-2xl hover-lift group animate-fade-in-up" style="opacity: 0; animation-delay: 0ms;">
+<div class="w-16 h-16 bg-emerald-accent/5 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-accent transition-colors duration-300">
+<span class="material-symbols-outlined text-emerald-accent group-hover:text-white text-3xl" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 transition-colors duration-300 group-hover:text-emerald-accent">India Operations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        Expert Accounting, Taxation, Audits, Entity Registrations, GST Registration &amp; Returns, TDS, and ROC Compliances.
+                    </p>
+<div class="flex items-center gap-2 text-emerald-accent font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm">verified</span>
+                        Comprehensive Local Support
+                    </div>
+</div>
+<!-- Australia Operations -->
+<div class="bg-white border border-slate-gray/10 p-8 rounded-2xl hover-lift group animate-fade-in-up" style="opacity: 0; animation-delay: 150ms;">
+<div class="w-16 h-16 bg-emerald-accent/5 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-accent transition-colors duration-300">
+<span class="material-symbols-outlined text-emerald-accent group-hover:text-white text-3xl">public</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 transition-colors duration-300 group-hover:text-emerald-accent">Australia Operations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        Full Australian Taxation and Accounting solutions tailored for seamless international operations and offshore management.
+                    </p>
+<div class="flex items-center gap-2 text-emerald-accent font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                        Cross-Border Specialist
+                    </div>
+</div>
+<!-- Global Expansion -->
+<div class="bg-white border border-slate-gray/10 p-8 rounded-2xl hover-lift group animate-fade-in-up" style="opacity: 0; animation-delay: 300ms;">
+<div class="w-16 h-16 bg-emerald-accent/5 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-accent transition-colors duration-300">
+<span class="material-symbols-outlined text-emerald-accent group-hover:text-white text-3xl" style="font-variation-settings: 'FILL' 1;">language</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 transition-colors duration-300 group-hover:text-emerald-accent">Global Expansion</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        Cross-border trade consultancy, setting up global entities, and dedicated Virtual CFO support for growing startups.
+                    </p>
+<div class="flex items-center gap-2 text-emerald-accent font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm">groups</span>
+                        Virtual CFO Leadership
+                    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Partnership Banner -->
+<section class="bg-deep-navy relative overflow-hidden py-16">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-white/5 border border-white/10 rounded-3xl p-12 flex flex-col md:flex-row items-center justify-between gap-8 backdrop-blur-sm transition-all duration-500 hover:bg-white/[0.07]">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">Let’s Collaborate &amp; Build Together</h2>
+<p class="font-body-lg text-body-lg text-slate-gray">
+                        Whether you're looking for premium financial infrastructure or strategic global partnerships, we're ready to help you scale.
+                    </p>
+</div>
+<a class="bg-emerald-accent text-white px-10 py-4 rounded-xl font-label-md text-label-md hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all whitespace-nowrap active:scale-95" href="#contact">
+                    Partner With Us
+                </a>
+</div>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -top-20 -left-20 w-64 h-64 border border-emerald-accent/20 rounded-full opacity-50"></div>
+</section>
+<!-- Lead Capture & Contact -->
+<section class="py-24 md:py-32 bg-white" id="contact">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Request Callback</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-12">
+                        Leave your details below, and one of our regional consultants will reach out to discuss your business needs within 24 hours.
+                    </p>
+<div class="space-y-8">
+<div class="flex items-start gap-4 group cursor-default">
+<div class="w-12 h-12 rounded-lg bg-emerald-accent/10 flex items-center justify-center text-emerald-accent flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-slate-gray">Email Inquiries</p>
+<p class="font-headline-md text-headline-md text-primary transition-colors group-hover:text-emerald-accent">accounts@dnkaglobal.com</p>
+</div>
+</div>
+<div class="flex items-start gap-4 group cursor-default">
+<div class="w-12 h-12 rounded-lg bg-emerald-accent/10 flex items-center justify-center text-emerald-accent flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-slate-gray">Consultation Hotline</p>
+<p class="font-headline-md text-headline-md text-primary transition-colors group-hover:text-emerald-accent">+91 77025 87704</p>
+</div>
+</div>
+<div class="flex items-start gap-4 group cursor-default">
+<div class="w-12 h-12 rounded-lg bg-emerald-accent/10 flex items-center justify-center text-emerald-accent flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+<span class="material-symbols-outlined">link</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-slate-gray">Official Portal</p>
+<p class="font-headline-md text-headline-md text-primary transition-colors group-hover:text-emerald-accent">DNKAGLOBAL.COM</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-ice-white p-8 md:p-12 rounded-3xl border border-slate-gray/10 shadow-sm transition-shadow hover:shadow-md duration-500">
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Full Name</label>
+<input class="w-full px-4 py-3 rounded-xl border border-slate-gray/20 focus:ring-4 focus:ring-emerald-accent/10 focus:border-emerald-accent outline-none transition-all duration-300" placeholder="John Doe" type="text">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Email/Phone</label>
+<input class="w-full px-4 py-3 rounded-xl border border-slate-gray/20 focus:ring-4 focus:ring-emerald-accent/10 focus:border-emerald-accent outline-none transition-all duration-300" placeholder="+91 12345 67890" type="text">
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Service Required</label>
+<select class="w-full px-4 py-3 rounded-xl border border-slate-gray/20 focus:ring-4 focus:ring-emerald-accent/10 focus:border-emerald-accent outline-none transition-all bg-white appearance-none duration-300">
+<option>India Ops</option>
+<option>Australia Ops</option>
+<option>Global Expansion</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Brief Message (Optional)</label>
+<textarea class="w-full px-4 py-3 rounded-xl border border-slate-gray/20 focus:ring-4 focus:ring-emerald-accent/10 focus:border-emerald-accent outline-none transition-all duration-300" placeholder="Tell us about your business..." rows="3"></textarea>
+</div>
+<button class="w-full bg-primary text-white py-4 rounded-xl font-label-md text-label-md hover:bg-emerald-accent transition-all duration-300 active:scale-95 hover:shadow-lg hover:shadow-emerald-accent/20" type="submit">
+                                Submit Request
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-ice-white dark:bg-deep-navy border-t border-slate-gray/10 py-12">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 pb-8 border-b border-slate-gray/10 mb-8">
+<div class="flex flex-col items-center md:items-start">
+<img alt="DNKA Global" class="h-8 md:h-10 w-auto mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd7Fu7p7OM7qwUIfdUCf3cJPvQGZKPSBBWuK7MjHv5BZ3-LMEVJvlRJWYJ76y7l2rOd10RZwqo8IVdpJf-mHa5KcTDvFZcZpzvmTgdwNRk5Uja2GbAGJa1pSH5bck9Hc7VLshhHVucCXZJmLY7-LWb0HhYN_es98GWvgtJ7a5gBEhgsnaHeY9qcBUwCq5TYWx7p3_VF1iYMEaK7EPR4aWXNejcigSvcue7nNNZ08ZMYMipgdsY5xJz">
+<p class="font-caption text-caption text-emerald-accent font-bold">Officially MCA Approved | Delivering Excellence in Global Compliance.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-caption text-caption text-slate-gray hover:text-emerald-accent transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-caption text-caption text-slate-gray hover:text-emerald-accent transition-colors duration-300" href="#">Terms of Service</a>
+<a class="font-caption text-caption text-slate-gray hover:text-emerald-accent transition-colors duration-300" href="#">Compliance</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+<p class="font-caption text-caption text-slate-gray">© 2024 DNKA Global Enterprises Private Limited. All rights reserved.</p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full border border-slate-gray/20 flex items-center justify-center text-slate-gray hover:border-emerald-accent hover:text-emerald-accent transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Header shadow and scroll behavior
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 20) {
+            header.classList.add('shadow-lg', 'bg-white/95', 'backdrop-blur-sm');
+        } else {
+            header.classList.remove('shadow-lg', 'bg-white/95', 'backdrop-blur-sm');
+        }
+    });
+
+    // Observer for reveal animations on scroll (optional addition for service cards)
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-fade-in-up');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Apply to service cards for extra polish
+    document.querySelectorAll('#services .bg-white').forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.animationDelay = `${index * 150}ms`;
+        revealObserver.observe(card);
+    });
+</script>
+
+
+</body></html>
